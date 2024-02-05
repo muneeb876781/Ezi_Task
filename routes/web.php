@@ -26,6 +26,8 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+
+
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
