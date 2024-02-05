@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Fuzzy+Bubbles:wght@700&family=Indie+Flower&family=Londrina+Outline&family=Poppins&family=Rubik+Vinyl&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 87.5vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 20%;
+}
+
+.navbar .logo h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.navbar .logo h1 span {
+    color: rgb(95, 95, 176);
+    
+    
+}
+
+.navbar .menus {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    /* margin-right: 40px; */
+}
+
+
+
+.navbar .menus ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar .menus ul li {
+    list-style: none;
+}
+
+.navbar .menus ul li a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+    color: rgb(95, 95, 176);
+    font-weight: bold;
+    border: 2px solid rgb(95, 95, 176);;
+    border-radius: 50px;
+}
+
+.navbar .menus ul li button{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+    color: rgb(95, 95, 176);
+    font-weight: bold;
+    border: 2px solid rgb(95, 95, 176);;
+    border-radius: 50px;
+    background: none;
+}
+
+.navbar .menus ul li button:hover {
+    border: none;
+    font-size: 22px;
+    color: black;
+}
+
+
+.navbar .menus ul li a:hover {
+    border: none;
+    font-size: 22px;
+    color: black;
+}
+
+.navbar .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 0%;
+}
+
+.navbar .icons input {
+    padding: 4px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.main .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Home.jpg); */
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .banner .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.main .banner .content h3 {
+    color: white;
+    font-size: 30px;
+    max-width: 60%;
+    text-align: center;
+}
+
+.main .banner .content h3 span {
+    /* color: rgb(95, 95, 176); */
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+.main .banner .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.main .banner .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    /* border: 2px solid rgb(95, 95, 176); */
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.main .banner .cards .card:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.main .banner .cards .card1{
+    margin-left: 20px;
+}
+
+.main .banner .cards .card3{
+    margin-right: 20px;
+}
+
+.main .banner .cards .card .cardLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+}
+
+.main .banner .cards .card .cardLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+.main .banner .cards .card2 .cardLogo img {
+    width: 160px;
+    height: 160px;
+}
+
+.main .banner .cards .card1 .cardLogo img {
+    width: 160px;
+    height: 120px;
+}
+
+.main .banner .cards .card .cardContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 3px;
+}
+
+.main .banner .cards .card .cardContent h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.main .banner .cards .card .cardContent a button {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 20px;
+    border: 2px solid rgb(95, 95, 176);
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.main .banner .cards .card .cardContent a button:hover{
+    background: rgb(95, 95, 176);
+    color: white;
+}
+
+/* ------------------------- */
+
+.main .sercicesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 88%;
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .sercicesContent .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main .sercicesContent .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    /* background: url(./images/cardbg.jpeg); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.main .sercicesContent .cards .card a button {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    background: rgb(95, 95, 176);
+    color: white;
+    border: 2px solid rgb(95, 95, 176);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+}
+
+.main .sercicesContent .cards .card a button:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.main .sercicesContent .cards .card:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    /* transform: scale(0.9); */
+}
+
+.main .sercicesContent .cards .card h1 {
+    font-size: 28px;
+    color: black;
+    /* text-shadow: 3px 3px rgba(0, 0, 0, 0.9); */
+}
+
+/* --------------------------- */
+
+.main .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 88%;
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .contact .contactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main .contact .contactContent .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.main .contact .contactContent .form .content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main .contact .contactContent .form h3 {
+    padding: 10px;
+}
+
+.main .contact .contactContent .form .fa-brands {
+    padding: 10px;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.main .contact .contactContent .form .fa-brands:hover {
+    color: rgb(95, 95, 176);
+    font-size: 35px;
+}
+
+.main .contact .contactImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+/* ----------------------------- */
+
+.main .servicesPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 108%;
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .pageServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main .pageServices .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+.main .pageServices .form .tasks{
+    padding: 10px;
+    margin: 7px;
+    font-size: 20px;
+    background: white;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 95%;
+    text-align: center;
+
+}
+
+.main .pageServices .form a button{
+    padding: 12px;
+    margin: 7px;
+    font-size: 20px;
+    background: rgb(95, 95, 176);
+    color: white;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: auto;
+    text-align: center;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.main .pageServices .form a button:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.main .servicesPage .pageContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main .servicesPage .pageContent .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+
+.main .servicesPage .pageContent .form p{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .servicesPage .pageContent .form h1{
+    font-size: 35px;
+    /* border-bottom: 2px solid white; */
+    font-weight: bolder;
+}
+
+.main .servicesPage .pageContent .form input{
+    margin-top: 10px;
+    height: 40px;
+    width: 70%;
+    border: 2ps solid black;
+    border-radius: 50px;
+}
+
+.main .servicesPage .pageContent .form select{
+    padding: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 70%;
+    border: 2ps solid black;
+    border-radius: 50px;
+}
+
+
+
+.main .pageContent .form a button{
+    padding: 12px;
+    margin: 7px;
+    font-size: 20px;
+    background: rgb(95, 95, 176);
+    color: white;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: auto;
+    text-align: center;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.main .pageContent .form a button:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* ----------------------- */
+
+
+
+.main .mediaGallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 88%;
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .mediaGallery .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.main .mediaGallery .col .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.main .mediaGallery .col .img img{
+    width: 100% ;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.main .mediaGallery .col .img img:hover{
+   transform: scale(1.1);
+}
+
+/* ------------------ */
+
+.main .aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .aboutUs .aboutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main .aboutUs .aboutImage img{
+    width: 500px;
+    height: 500px;
+}
+
+.main .aboutUs .aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+.main .aboutUs .aboutContent .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    text-align: center;
+}
+
+.main .aboutUs .aboutContent .form p{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .aboutUs .aboutContent .form h1{
+    font-size: 35px;
+    border-bottom: 2px solid white;
+    font-weight: bolder;
+}
+
+
+
+
+
+
